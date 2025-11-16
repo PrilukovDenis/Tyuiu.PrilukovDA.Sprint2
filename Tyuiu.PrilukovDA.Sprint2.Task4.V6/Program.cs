@@ -1,11 +1,41 @@
-﻿using Tyuiu.PrilukovDA.Sprint2.Task4.V6.Lib;
+﻿int x = Convert.ToInt32(Console.ReadLine());
 
-DataService ds = new DataService();
+int z = 1; switch (2 * x)
 
-Console.WriteLine("Введите x ");
-double x = Convert.ToDouble(Console.ReadLine());
+{
 
-Console.WriteLine("Введите y ");
-double y = Convert.ToDouble(Console.ReadLine());
+    case 1:
 
-Console.WriteLine(ds.Calculate(x, y));
+        z = 10;
+
+        break;
+
+    case 2:
+
+        z *= x;
+
+        break;
+
+    case 4:
+
+        z += x + 5;
+
+        break;
+
+    case 6:
+
+    case 8:
+
+        z = 3;
+
+        break;
+
+    default:
+
+        z = 0;
+
+        break;
+
+}
+
+Console.WriteLine(z);
