@@ -8,8 +8,9 @@ namespace Tyuiu.PrilukovDA.Sprint2.Task5.V12.Lib
         {
             if (n > 1)
             {
-                return $"{n - 1}.{m}.{g}";
+                return $"{(n - 1):D2}.{m:D2}.{g}";
             }
+
             int prevMonth, prevDay;
 
             if (m == 1)
@@ -47,7 +48,7 @@ namespace Tyuiu.PrilukovDA.Sprint2.Task5.V12.Lib
                 }
             }
 
-            return $"{prevDay}.{prevMonth}.{g}";
+            return $"{prevDay:D2}.{prevMonth:D2}.{g}";
         }
     }
 }
