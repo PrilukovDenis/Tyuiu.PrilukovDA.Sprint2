@@ -1,12 +1,13 @@
-﻿using Tyuiu.PrilukovDA.Sprint2.Task2.V1.Lib;
+﻿int x;
 
-DataService ds  = new DataService();
+x = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите x");
-int x = Convert.ToInt32(Console.ReadLine());
+double y = 0;
 
-Console.WriteLine("Введите y");
-int y = Convert.ToInt32(Console.ReadLine());
+if (x <= 0) y = x * x;
 
-Console.WriteLine(ds.CheckDotInShadedArea(x, y));
+else if ((x > 0) && (x < 10)) y = 1.0 / x;
 
+else y = 3.0 * x / 5;
+
+Console.WriteLine(y);
